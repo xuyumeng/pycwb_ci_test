@@ -69,7 +69,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 find_package(PkgConfig REQUIRED)
 
 #Find Healpix
-pkg_check_modules(HEALPIX IMPORTED_TARGET "healpix_cxx")
+pkg_check_modules(HEALPIX IMPORTED_TARGET "healpix")
 if(NOT HEALPIX_FOUND)
    find_package(Healpix REQUIRED)
 else()
