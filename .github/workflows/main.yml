@@ -25,7 +25,7 @@ jobs:
 #        shell: micromamba-shell {0}
         # to supply options, put them in 'env', like:
         env:
-          CIBW_BEFORE_BUILD: yum install epel-release && yum install -y root root-minuit2 root-fumili healpix-devel
+          CIBW_BEFORE_BUILD: yum install epel-release && yum install -y root root-minuit2 root-fumili healpix_cxx healpix-devel
 
       - uses: actions/upload-artifact@v3
         with:
